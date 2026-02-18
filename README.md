@@ -2,9 +2,8 @@
 
 ## Problem Statement
 
-A multi-location liquor store chain needs to optimize vendor relationships and inventory management across its stores. The analysis aims to:
+A multi-location liquor store chain needs to optimize vendor relationships across its stores. The analysis aims to:
 - **Evaluate vendor performance** based on profitability, delivery reliability, and sales volume
-- **Optimize inventory levels** to reduce carrying costs and prevent stockouts
 - **Identify pricing opportunities** through vendor comparison and margin analysis
 - **Improve cash flow** by analyzing payment cycles and freight costs
 - **Maximize profitability** through data-driven product mix decisions
