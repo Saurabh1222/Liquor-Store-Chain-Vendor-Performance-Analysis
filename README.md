@@ -1,4 +1,4 @@
-# Liquor Store Chain - Vendor Performance & Inventory Analysis
+# Liquor Store Chain - Vendor Performance Analysis
 
 ## Problem Statement
 
