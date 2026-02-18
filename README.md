@@ -20,18 +20,12 @@ This analysis will help procurement and operations teams make informed decisions
 4. What are the payment terms and freight costs by vendor?
 5. Which vendors should we prioritize for negotiations?
 
-### Inventory Management
-6. Which products have the highest/lowest turnover rates?
-7. Which stores have stockout or overstock issues?
-8. What is the optimal reorder point for each product?
-9. How much dead stock exists across stores?
-10. What is the inventory carrying cost by store?
 
 ### Profitability
-11. Which products have the highest profit margins?
-12. Which product categories (spirits vs. wine) are most profitable?
-13. What are the seasonal sales trends?
-14. Which stores are most/least profitable?
+6. Which products have the highest profit margins?
+7. Which product categories (spirits vs. wine) are most profitable?
+8. What are the seasonal sales trends?
+9. Which stores are most/least profitable?
 
 ## Tech Stack
 
