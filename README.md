@@ -194,18 +194,12 @@ Project1/
 4. **Freight Cost %** = Total Freight / Total Purchase Dollars × 100
 5. **Sales Volume** = Total Sales Dollars by Vendor
 
-### Inventory Metrics
-6. **Inventory Turnover** = Cost of Goods Sold / Average Inventory
-7. **Days Inventory Outstanding** = 365 / Inventory Turnover
-8. **Stock-out Rate** = Products with 0 ending inventory / Total Products × 100
-9. **Dead Stock** = Products with 0 sales and positive ending inventory
-10. **Carrying Cost** = Average Inventory Value × Carrying Cost Rate
 
 ### Profitability Metrics
-11. **Gross Margin** = (Sales - COGS) / Sales × 100
-12. **GMROI** = Gross Margin / Average Inventory Cost
-13. **Sales per Square Foot** = Total Sales / Store Size (if available)
-14. **Category Mix** = Category Sales / Total Sales × 100
+6. **Gross Margin** = (Sales - COGS) / Sales × 100
+7. **GMROI** = Gross Margin / Average Inventory Cost
+8. **Sales per Square Foot** = Total Sales / Store Size (if available)
+9. **Category Mix** = Category Sales / Total Sales × 100
 
 ## Implementation Steps
 
