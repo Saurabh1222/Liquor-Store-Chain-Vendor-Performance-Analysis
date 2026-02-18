@@ -246,41 +246,7 @@ jupyter notebook notebooks/
 python src/generate_reports.py
 ```
 
-## SQL Query Examples
 
-### Vendor Performance Query
-```sql
--- Top 10 vendors by profit margin
-SELECT 
-    v.VendorName,
-    COUNT(DISTINCT s.InventoryId) as ProductCount,
-    SUM(s.SalesDollars) as TotalSales,
-    SUM(p.Dollars) as TotalPurchases,
-    ROUND((SUM(s.SalesDollars) - SUM(p.Dollars)) / SUM(s.SalesDollars) * 100, 2) as ProfitMargin
-FROM sales s
-JOIN purchases p ON s.InventoryId = p.InventoryId
-JOIN vendors v ON p.VendorNumber = v.VendorNumber
-GROUP BY v.VendorName
-ORDER BY ProfitMargin DESC
-LIMIT 10;
-```
-
-### Inventory Turnover Query
-```sql
--- Inventory turnover by product
-SELECT 
-    bi.Description,
-    bi.onHand as BeginInventory,
-    ei.onHand as EndInventory,
-    SUM(s.SalesQuantity) as UnitsSold,
-    ROUND(SUM(s.SalesQuantity) / ((bi.onHand + ei.onHand) / 2.0), 2) as TurnoverRatio
-FROM begin_inventory bi
-JOIN end_inventory ei ON bi.InventoryId = ei.InventoryId
-LEFT JOIN sales s ON bi.InventoryId = s.InventoryId
-GROUP BY bi.InventoryId
-HAVING TurnoverRatio > 0
-ORDER BY TurnoverRatio DESC;
-```
 
 ## Logging Configuration
 
@@ -299,17 +265,12 @@ Log file location: `logs/analysis.log`
    - Vendor delivery performance metrics
    - Payment cycle analysis
 
-2. **Inventory Optimization Report**
-   - Products requiring reorder
-   - Dead stock identification
-   - Store-level inventory recommendations
-
-3. **Profitability Analysis**
+2. **Profitability Analysis**
    - Product margin analysis
    - Category performance comparison
    - Seasonal trend identification
 
-4. **Strategic Recommendations**
+3. **Strategic Recommendations**
    - Vendor consolidation opportunities
    - Pricing optimization strategies
    - Inventory policy improvements
