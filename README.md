@@ -337,28 +337,4 @@ openpyxl>=3.1.0
 python-dateutil>=2.8.0
 ```
 
-## How to Run
 
-```bash
-# Step 1: Install dependencies
-pip install -r requirements.txt
-
-# Step 2: Set up database
-python src/database_setup.py
-
-# Step 3: Run analysis
-python main.py
-
-# Step 4: View results
-# - Check logs/analysis.log for execution details
-# - Open reports/figures/ for visualizations
-# - Review reports/ for PDF outputs
-```
-
-## Author
-
-Data Analysis Project - Liquor Store Vendor & Inventory Optimization
-
-## License
-
-Internal Use Only
